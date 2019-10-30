@@ -1,8 +1,8 @@
-Κανόνες CSS που χρησιμποποιήθηκαν:
+CSS rules used:
 
 
-1)Αλλαγή του background χρώματος, πίσω από το navbar("Multi=User Site"), σε σκούρο μπλε(#000099), όταν δεν περνάει ο δείκτης
-του ποντικιού από πάνω.
+1) Change the background color, behind the navbar ("Multi = User Site"), to dark blue (# 000099) when the cursor does not move
+of the mouse from above.
 
 .navbar-inverse .navbar-brand {
     color: #999999;
@@ -10,14 +10,14 @@
 }
 
 
-2)Στο "site.Master" αλλαγή της γραμματοσειράς σε "Arial Black", για το κέιμενο που υπάρχει μέσα στο hr.
+2) In the "site.Master" change the font to "Arial Black", for the text in the hr.
 
 hr {
     ...
     font-family: "Arial Black";
 }
 
-3)Στην σελίδα "Statistics.aspx", το button θα εχει μπλε, διακεκομένο, λεπτό περίγραμμα.
+3) On the "Statistics.aspx" page, the button will have a blue, dotted, thin border.
 
 button,
 html input[type="button"],
@@ -30,7 +30,7 @@ input[type="submit"] {
 }
 
 
-4)Στην σελίδα "Statistics.aspx" τα textbox, θα έχουν γκρι χρώμα και groove περίγραμμα.
+4) On the "Statistics.aspx" page the textboxes will have a gray color and a groove border.
 
 input,
 select,
@@ -45,14 +45,14 @@ textarea {
     <asp:TextBox ID="TextBox2" runat="server" BackColor="#CCCCFF"></asp:TextBox>
 
 
-5)Αλλαγή στο "page.Master". Το έτος και ο τίτλος που εμφανίζονται στο τέλος της σελίδας, θα είναι σε στυλ: italic,
-χρώμα:μαύρο, γραμματοσειρά: "Arial Black", και decoration: "underline" σε κάθε σελίδα.
+5) Change to "page.Master". The year and title at the bottom of the page will be in the style: italic,
+color: black, font: "Arial Black", and decoration: "underline" on each page.
 
     <p style="font-style: italic; color: #000000; font-family: 'Arial Black'; font-weight: lighter; text-decoration: underline">&copy; <%: DateTime.Now.Year %> - Lab 4</p>
 
 
-6)Αλλαγή του background όλου του site. Ορισμός εικόνας ('../wallpaper.jpg') και τοποθέτηση στην επιθυμητή θέση,
-στην ετικέτα body του "site.Maste"r.
+6) Change the background of the entire site. Set image ('../wallpaper.jpg') and place it in the desired location,
+on the body tag of "site.Maste" r.
 
 body {
     background-position: right;
@@ -66,13 +66,13 @@ body {
 }
 
 
-7)Στην σελίδα "Default.aspx", αλλαγή του χρώμματος στις ετικέτες h2 και p σε λευκό(#FFFFFF), για να είναι ευανάγνωστο.
+7) On the "Default.aspx" page, change the color to the h2 and p labels on white (#FFFFFF) to make it readable.
 
     <h2 style="color: #FFFFFF">Getting started</h2>
     <p style="color: #FFFFFF">
 
 
-8)Στην σελίδα "Contact.aspx", αλλαγή του χρώμματος στις ετικέτες h3, h2 και adrress σε λευκό(#FFFFFF) και στην ετικέτα a σε ροζ(#FF00FF).
+8) On the "Contact.aspx" page, change the color to h3, h2 and adrress on white (#FFFFFF) and a on pink (# FF00FF).
 
     <h3 style="color: #FFFFFF">Your contact page.</h3>
     <h2 style="color: #FFFFFF"><%: Title %>.</h2>
@@ -81,16 +81,16 @@ body {
     <a href="mailto:Marketing@example.com" style="color: #FF00FF">Marketing@example.com</a>
 
 
-9)Στην σελίδα "About.aspx", στην ετικέτα h3 αλλαγή του χρώμματος της γραμματοσειράς σε πράσινο(#00FF00), του font-style σε normal, του font-size σε large,
-  και μορφοποίηση small-caps.
-  Και στις ετικέτες h2 και p, αλλαγή του χρώμματος της γραμματοσειράς σε λευκό(#FFFFFF).
+9) On the "About.aspx" page, in the h3 label change the font color to green (# 00FF00), font-style to normal, font-size to large,
+   and small-caps formatting.
+   And on the h2 and p labels, change the font color to white (#FFFFFF).
 
     <h2 style="color: #FFFFFF"><%: Title %>.</h2>
     <h3 style="color: #00FF00; font-style: normal; font-weight: bold; font-size: large; font-variant: small-caps">Your application description page.</h3>
     <p style="color: #FFFFFF">Use this area to provide additional information.</p>
 
 
-10)Στην σελίδα "Statitics.aspx", αλλαγή του χρώματος των μηνυμάτων που εμφανίζουν τα Label2, label3 σε κίτρινο.
+10) On the "Statitics.aspx" page, change the color of the messages displayed by Label2, label3 to yellow.
 
     <p>
         <asp:Label ID="Label2" runat="server" Text="Label" ForeColor="Yellow"></asp:Label>
