@@ -2,43 +2,43 @@ CSS rules used:
 
 
 1) Change the background color, behind the navbar ("Multi = User Site"), to dark blue (# 000099) when the cursor does not move
-of the mouse from above.
+   of the mouse from above.
 
-.navbar-inverse .navbar-brand {
+    .navbar-inverse .navbar-brand {
     color: #999999;
     background-color: #000099;
-}
+    }
 
 
 2) In the "site.Master" change the font to "Arial Black", for the text in the hr.
 
-hr {
+    hr {
     ...
     font-family: "Arial Black";
-}
+    }
 
 3) On the "Statistics.aspx" page, the button will have a blue, dotted, thin border.
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
     border: thin dotted #0000FF;
     cursor: pointer;
     -webkit-appearance: button;
     background-color: #FF0000;
-}
+    }
 
 
 4) On the "Statistics.aspx" page the textboxes will have a gray color and a groove border.
 
-input,
-select,
-textarea {
+    input,
+    select,
+    textarea {
     border-style: groove;
     max-width: 280px;
     background-color: #CCCCCC;
-}
+    }
 
     <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="Button1_Click" BackColor="#CCCCFF"></asp:TextBox>
       &nbsp;&nbsp;
@@ -46,24 +46,24 @@ textarea {
 
 
 5) Change to "page.Master". The year and title at the bottom of the page will be in the style: italic,
-color: black, font: "Arial Black", and decoration: "underline" on each page.
+   color: black, font: "Arial Black", and decoration: "underline" on each page.
 
     <p style="font-style: italic; color: #000000; font-family: 'Arial Black'; font-weight: lighter; text-decoration: underline">&copy; <%: DateTime.Now.Year %> - Lab 4</p>
 
 
 6) Change the background of the entire site. Set image ('../wallpaper.jpg') and place it in the desired location,
-on the body tag of "site.Maste" r.
+   on the body tag of "site.Maste" r.
 
-body {
-    background-position: right;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #333333;
-    background-image: url('../wallpaper.jpg');
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-}
+   body {
+       background-position: right;
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       line-height: 1.428571429;
+       color: #333333;
+       background-image: url('../wallpaper.jpg');
+       background-repeat: repeat-y;
+       background-attachment: fixed;
+    }
 
 
 7) On the "Default.aspx" page, change the color to the h2 and p labels on white (#FFFFFF) to make it readable.
