@@ -1,0 +1,103 @@
+Κανόνες CSS που χρησιμποποιήθηκαν:
+
+
+1)Αλλαγή του background χρώματος, πίσω από το navbar("Multi=User Site"), σε σκούρο μπλε(#000099), όταν δεν περνάει ο δείκτης
+του ποντικιού από πάνω.
+
+.navbar-inverse .navbar-brand {
+    color: #999999;
+    background-color: #000099;
+}
+
+
+2)Στο "site.Master" αλλαγή της γραμματοσειράς σε "Arial Black", για το κέιμενο που υπάρχει μέσα στο hr.
+
+hr {
+    ...
+    font-family: "Arial Black";
+}
+
+3)Στην σελίδα "Statistics.aspx", το button θα εχει μπλε, διακεκομένο, λεπτό περίγραμμα.
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    border: thin dotted #0000FF;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-color: #FF0000;
+}
+
+
+4)Στην σελίδα "Statistics.aspx" τα textbox, θα έχουν γκρι χρώμα και groove περίγραμμα.
+
+input,
+select,
+textarea {
+    border-style: groove;
+    max-width: 280px;
+    background-color: #CCCCCC;
+}
+
+    <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="Button1_Click" BackColor="#CCCCFF"></asp:TextBox>
+      &nbsp;&nbsp;
+    <asp:TextBox ID="TextBox2" runat="server" BackColor="#CCCCFF"></asp:TextBox>
+
+
+5)Αλλαγή στο "page.Master". Το έτος και ο τίτλος που εμφανίζονται στο τέλος της σελίδας, θα είναι σε στυλ: italic,
+χρώμα:μαύρο, γραμματοσειρά: "Arial Black", και decoration: "underline" σε κάθε σελίδα.
+
+    <p style="font-style: italic; color: #000000; font-family: 'Arial Black'; font-weight: lighter; text-decoration: underline">&copy; <%: DateTime.Now.Year %> - Lab 4</p>
+
+
+6)Αλλαγή του background όλου του site. Ορισμός εικόνας ('../wallpaper.jpg') και τοποθέτηση στην επιθυμητή θέση,
+στην ετικέτα body του "site.Maste"r.
+
+body {
+    background-position: right;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-image: url('../wallpaper.jpg');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+
+7)Στην σελίδα "Default.aspx", αλλαγή του χρώμματος στις ετικέτες h2 και p σε λευκό(#FFFFFF), για να είναι ευανάγνωστο.
+
+    <h2 style="color: #FFFFFF">Getting started</h2>
+    <p style="color: #FFFFFF">
+
+
+8)Στην σελίδα "Contact.aspx", αλλαγή του χρώμματος στις ετικέτες h3, h2 και adrress σε λευκό(#FFFFFF) και στην ετικέτα a σε ροζ(#FF00FF).
+
+    <h3 style="color: #FFFFFF">Your contact page.</h3>
+    <h2 style="color: #FFFFFF"><%: Title %>.</h2>
+
+    <a href="mailto:Support@example.com" style="color: #FF00FF">Support@example.com</a><br />
+    <a href="mailto:Marketing@example.com" style="color: #FF00FF">Marketing@example.com</a>
+
+
+9)Στην σελίδα "About.aspx", στην ετικέτα h3 αλλαγή του χρώμματος της γραμματοσειράς σε πράσινο(#00FF00), του font-style σε normal, του font-size σε large,
+  και μορφοποίηση small-caps.
+  Και στις ετικέτες h2 και p, αλλαγή του χρώμματος της γραμματοσειράς σε λευκό(#FFFFFF).
+
+    <h2 style="color: #FFFFFF"><%: Title %>.</h2>
+    <h3 style="color: #00FF00; font-style: normal; font-weight: bold; font-size: large; font-variant: small-caps">Your application description page.</h3>
+    <p style="color: #FFFFFF">Use this area to provide additional information.</p>
+
+
+10)Στην σελίδα "Statitics.aspx", αλλαγή του χρώματος των μηνυμάτων που εμφανίζουν τα Label2, label3 σε κίτρινο.
+
+    <p>
+        <asp:Label ID="Label2" runat="server" Text="Label" ForeColor="Yellow"></asp:Label>
+
+    </p>
+    <p>
+        <asp:Label ID="Label3" runat="server" Text="Label" ForeColor="Yellow"></asp:Label>
+
+    </p>
+
