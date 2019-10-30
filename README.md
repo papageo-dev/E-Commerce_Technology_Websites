@@ -1,7 +1,7 @@
 # Websites-Templates-VS-
  Some websites(templates) in Microsoft Visual Studio.
 
-The websites were created using "Microsoft Visual Studio Enterprise 2015".
+The websites were created using "Microsoft Visual Studio Enterprise 2015". I used JavaScript, ASP.NET, C# and CSS rules.
 
 These tasks attempt to explain the use of CSS rules, to change the look(colors, background, fonts, etc) of a website,
 importing multimedia, using structures and synchronizing them using code in a C# programming language.
